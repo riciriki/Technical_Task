@@ -1,3 +1,9 @@
+using Loyalty_campaigns.Business_Layer;
+using Loyalty_campaigns.Business_Layer.Interfaces;
+using Loyalty_campaigns.Data_Access_Layer;
+using Loyalty_campaigns.Data_Access_Layer.Interfaces;
+using Loyalty_campaigns.Models;
+
 namespace Loyalty_campaigns
 {
     public class Program
@@ -12,6 +18,8 @@ namespace Loyalty_campaigns
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+            builder.Services.AddScoped<IRewardService, RewardService>();
+            builder.Services.AddScoped<IRewardRepository, RewardRepository>();
 
             var app = builder.Build();
 
