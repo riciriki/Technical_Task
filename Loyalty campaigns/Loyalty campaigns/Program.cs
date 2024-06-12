@@ -1,8 +1,10 @@
 using Loyalty_campaigns.Business_Layer;
 using Loyalty_campaigns.Business_Layer.Interfaces;
 using Loyalty_campaigns.Data_Access_Layer;
+using Loyalty_campaigns.Data_Access_Layer.Context;
 using Loyalty_campaigns.Data_Access_Layer.Interfaces;
 using Loyalty_campaigns.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace Loyalty_campaigns
 {
@@ -18,6 +20,9 @@ namespace Loyalty_campaigns
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+            builder.Services.AddDbContext<DataContext>(options => {
+                options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+            });
             builder.Services.AddScoped<IRewardService, RewardService>();
             builder.Services.AddScoped<IRewardRepository, RewardRepository>();
 
