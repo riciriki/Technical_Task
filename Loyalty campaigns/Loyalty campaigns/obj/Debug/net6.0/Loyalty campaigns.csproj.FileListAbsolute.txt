@@ -1,0 +1,64 @@
+C:\Users\Pc\Desktop\Technical_Task_Campaign\Loyalty campaigns\Loyalty campaigns\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\Pc\Desktop\Technical_Task_Campaign\Loyalty campaigns\Loyalty campaigns\bin\Debug\net6.0\appsettings.json
+C:\Users\Pc\Desktop\Technical_Task_Campaign\Loyalty campaigns\Loyalty campaigns\bin\Debug\net6.0\Loyalty campaigns.exe
+C:\Users\Pc\Desktop\Technical_Task_Campaign\Loyalty campaigns\Loyalty campaigns\bin\Debug\net6.0\Loyalty campaigns.deps.json
+C:\Users\Pc\Desktop\Technical_Task_Campaign\Loyalty campaigns\Loyalty campaigns\bin\Debug\net6.0\Loyalty campaigns.runtimeconfig.json
+C:\Users\Pc\Desktop\Technical_Task_Campaign\Loyalty campaigns\Loyalty campaigns\bin\Debug\net6.0\Loyalty campaigns.dll
+C:\Users\Pc\Desktop\Technical_Task_Campaign\Loyalty campaigns\Loyalty campaigns\bin\Debug\net6.0\Loyalty campaigns.pdb
+C:\Users\Pc\Desktop\Technical_Task_Campaign\Loyalty campaigns\Loyalty campaigns\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\Pc\Desktop\Technical_Task_Campaign\Loyalty campaigns\Loyalty campaigns\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Pc\Desktop\Technical_Task_Campaign\Loyalty campaigns\Loyalty campaigns\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Pc\Desktop\Technical_Task_Campaign\Loyalty campaigns\Loyalty campaigns\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Pc\Desktop\Technical_Task_Campaign\Loyalty campaigns\Loyalty campaigns\obj\Debug\net6.0\Loyalty campaigns.csproj.AssemblyReference.cache
+C:\Users\Pc\Desktop\Technical_Task_Campaign\Loyalty campaigns\Loyalty campaigns\obj\Debug\net6.0\Loyalty campaigns.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Pc\Desktop\Technical_Task_Campaign\Loyalty campaigns\Loyalty campaigns\obj\Debug\net6.0\Loyalty campaigns.AssemblyInfoInputs.cache
+C:\Users\Pc\Desktop\Technical_Task_Campaign\Loyalty campaigns\Loyalty campaigns\obj\Debug\net6.0\Loyalty campaigns.AssemblyInfo.cs
+C:\Users\Pc\Desktop\Technical_Task_Campaign\Loyalty campaigns\Loyalty campaigns\obj\Debug\net6.0\Loyalty campaigns.csproj.CoreCompileInputs.cache
+C:\Users\Pc\Desktop\Technical_Task_Campaign\Loyalty campaigns\Loyalty campaigns\obj\Debug\net6.0\Loyalty campaigns.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Pc\Desktop\Technical_Task_Campaign\Loyalty campaigns\Loyalty campaigns\obj\Debug\net6.0\Loyalty campaigns.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Pc\Desktop\Technical_Task_Campaign\Loyalty campaigns\Loyalty campaigns\obj\Debug\net6.0\staticwebassets\msbuild.Loyalty campaigns.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Pc\Desktop\Technical_Task_Campaign\Loyalty campaigns\Loyalty campaigns\obj\Debug\net6.0\staticwebassets\msbuild.build.Loyalty campaigns.props
+C:\Users\Pc\Desktop\Technical_Task_Campaign\Loyalty campaigns\Loyalty campaigns\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Loyalty campaigns.props
+C:\Users\Pc\Desktop\Technical_Task_Campaign\Loyalty campaigns\Loyalty campaigns\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Loyalty campaigns.props
+C:\Users\Pc\Desktop\Technical_Task_Campaign\Loyalty campaigns\Loyalty campaigns\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\Pc\Desktop\Technical_Task_Campaign\Loyalty campaigns\Loyalty campaigns\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\Pc\Desktop\Technical_Task_Campaign\Loyalty campaigns\Loyalty campaigns\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\Pc\Desktop\Technical_Task_Campaign\Loyalty campaigns\Loyalty campaigns\obj\Debug\net6.0\scopedcss\bundle\Loyalty campaigns.styles.css
+C:\Users\Pc\Desktop\Technical_Task_Campaign\Loyalty campaigns\Loyalty campaigns\obj\Debug\net6.0\Loyalty campaigns.csproj.CopyComplete
+C:\Users\Pc\Desktop\Technical_Task_Campaign\Loyalty campaigns\Loyalty campaigns\obj\Debug\net6.0\Loyalty campaigns.dll
+C:\Users\Pc\Desktop\Technical_Task_Campaign\Loyalty campaigns\Loyalty campaigns\obj\Debug\net6.0\refint\Loyalty campaigns.dll
+C:\Users\Pc\Desktop\Technical_Task_Campaign\Loyalty campaigns\Loyalty campaigns\obj\Debug\net6.0\Loyalty campaigns.pdb
+C:\Users\Pc\Desktop\Technical_Task_Campaign\Loyalty campaigns\Loyalty campaigns\obj\Debug\net6.0\Loyalty campaigns.genruntimeconfig.cache
+C:\Users\Pc\Desktop\Technical_Task_Campaign\Loyalty campaigns\Loyalty campaigns\obj\Debug\net6.0\ref\Loyalty campaigns.dll
+C:\Users\Pc\Desktop\Technical_Task_Campaign\Technical_Task\Loyalty campaigns\Loyalty campaigns\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\Pc\Desktop\Technical_Task_Campaign\Technical_Task\Loyalty campaigns\Loyalty campaigns\bin\Debug\net6.0\appsettings.json
+C:\Users\Pc\Desktop\Technical_Task_Campaign\Technical_Task\Loyalty campaigns\Loyalty campaigns\bin\Debug\net6.0\Loyalty campaigns.exe
+C:\Users\Pc\Desktop\Technical_Task_Campaign\Technical_Task\Loyalty campaigns\Loyalty campaigns\bin\Debug\net6.0\Loyalty campaigns.deps.json
+C:\Users\Pc\Desktop\Technical_Task_Campaign\Technical_Task\Loyalty campaigns\Loyalty campaigns\bin\Debug\net6.0\Loyalty campaigns.runtimeconfig.json
+C:\Users\Pc\Desktop\Technical_Task_Campaign\Technical_Task\Loyalty campaigns\Loyalty campaigns\bin\Debug\net6.0\Loyalty campaigns.dll
+C:\Users\Pc\Desktop\Technical_Task_Campaign\Technical_Task\Loyalty campaigns\Loyalty campaigns\bin\Debug\net6.0\Loyalty campaigns.pdb
+C:\Users\Pc\Desktop\Technical_Task_Campaign\Technical_Task\Loyalty campaigns\Loyalty campaigns\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\Pc\Desktop\Technical_Task_Campaign\Technical_Task\Loyalty campaigns\Loyalty campaigns\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Pc\Desktop\Technical_Task_Campaign\Technical_Task\Loyalty campaigns\Loyalty campaigns\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Pc\Desktop\Technical_Task_Campaign\Technical_Task\Loyalty campaigns\Loyalty campaigns\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Pc\Desktop\Technical_Task_Campaign\Technical_Task\Loyalty campaigns\Loyalty campaigns\obj\Debug\net6.0\Loyalty campaigns.csproj.AssemblyReference.cache
+C:\Users\Pc\Desktop\Technical_Task_Campaign\Technical_Task\Loyalty campaigns\Loyalty campaigns\obj\Debug\net6.0\Loyalty campaigns.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Pc\Desktop\Technical_Task_Campaign\Technical_Task\Loyalty campaigns\Loyalty campaigns\obj\Debug\net6.0\Loyalty campaigns.AssemblyInfoInputs.cache
+C:\Users\Pc\Desktop\Technical_Task_Campaign\Technical_Task\Loyalty campaigns\Loyalty campaigns\obj\Debug\net6.0\Loyalty campaigns.AssemblyInfo.cs
+C:\Users\Pc\Desktop\Technical_Task_Campaign\Technical_Task\Loyalty campaigns\Loyalty campaigns\obj\Debug\net6.0\Loyalty campaigns.csproj.CoreCompileInputs.cache
+C:\Users\Pc\Desktop\Technical_Task_Campaign\Technical_Task\Loyalty campaigns\Loyalty campaigns\obj\Debug\net6.0\Loyalty campaigns.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Pc\Desktop\Technical_Task_Campaign\Technical_Task\Loyalty campaigns\Loyalty campaigns\obj\Debug\net6.0\Loyalty campaigns.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Pc\Desktop\Technical_Task_Campaign\Technical_Task\Loyalty campaigns\Loyalty campaigns\obj\Debug\net6.0\staticwebassets\msbuild.Loyalty campaigns.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Pc\Desktop\Technical_Task_Campaign\Technical_Task\Loyalty campaigns\Loyalty campaigns\obj\Debug\net6.0\staticwebassets\msbuild.build.Loyalty campaigns.props
+C:\Users\Pc\Desktop\Technical_Task_Campaign\Technical_Task\Loyalty campaigns\Loyalty campaigns\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Loyalty campaigns.props
+C:\Users\Pc\Desktop\Technical_Task_Campaign\Technical_Task\Loyalty campaigns\Loyalty campaigns\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Loyalty campaigns.props
+C:\Users\Pc\Desktop\Technical_Task_Campaign\Technical_Task\Loyalty campaigns\Loyalty campaigns\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\Pc\Desktop\Technical_Task_Campaign\Technical_Task\Loyalty campaigns\Loyalty campaigns\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\Pc\Desktop\Technical_Task_Campaign\Technical_Task\Loyalty campaigns\Loyalty campaigns\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\Pc\Desktop\Technical_Task_Campaign\Technical_Task\Loyalty campaigns\Loyalty campaigns\obj\Debug\net6.0\scopedcss\bundle\Loyalty campaigns.styles.css
+C:\Users\Pc\Desktop\Technical_Task_Campaign\Technical_Task\Loyalty campaigns\Loyalty campaigns\obj\Debug\net6.0\Loyalty campaigns.csproj.CopyComplete
+C:\Users\Pc\Desktop\Technical_Task_Campaign\Technical_Task\Loyalty campaigns\Loyalty campaigns\obj\Debug\net6.0\Loyalty campaigns.dll
+C:\Users\Pc\Desktop\Technical_Task_Campaign\Technical_Task\Loyalty campaigns\Loyalty campaigns\obj\Debug\net6.0\refint\Loyalty campaigns.dll
+C:\Users\Pc\Desktop\Technical_Task_Campaign\Technical_Task\Loyalty campaigns\Loyalty campaigns\obj\Debug\net6.0\Loyalty campaigns.pdb
+C:\Users\Pc\Desktop\Technical_Task_Campaign\Technical_Task\Loyalty campaigns\Loyalty campaigns\obj\Debug\net6.0\Loyalty campaigns.genruntimeconfig.cache
+C:\Users\Pc\Desktop\Technical_Task_Campaign\Technical_Task\Loyalty campaigns\Loyalty campaigns\obj\Debug\net6.0\ref\Loyalty campaigns.dll
