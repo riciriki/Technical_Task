@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "67a00SW1/wB6AFRnqkTF+/il9OfB9o/2DIZnZ5Zp/4Sr8yXbvvIz6MonWxhM9XDGMcJb8iq9NGJxZ9Fx01Jx2A==",
+  "dgSpecHash": "abv62blmVHJVH2ixHg5Khy7dy2NUx0lZ2eb1fssxHcHir4XNnRNRzim6WJqpsPVraHzlVDPuSoF6nQ9dYUeEjQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Pc\\Desktop\\Technical_Task_Campaign\\Technical_Task\\Loyalty campaigns\\Loyalty campaigns\\Loyalty campaigns.csproj",
+  "projectFilePath": "C:\\Users\\Pc\\Desktop\\NewCopyClone\\Technical_Task\\Loyalty campaigns\\Loyalty campaigns\\Loyalty campaigns.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Pc\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Pc\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
