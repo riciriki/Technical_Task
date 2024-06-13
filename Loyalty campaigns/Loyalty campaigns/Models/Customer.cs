@@ -10,6 +10,6 @@ namespace Loyalty_campaigns.Models
         public string LastName { get; set; } = string.Empty;
         public string Email { get; set; } = string.Empty;
         public bool Loyality_member { get; set; } = false;
-        public List<Purchase>? Purchases { get; set; }
+        //public List<Purchase>? Purchases { get; set; }
     }
 }

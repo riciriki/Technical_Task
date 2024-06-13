@@ -1,4 +1,5 @@
 ﻿using Loyalty_campaigns.Business_Layer.Interfaces;
+using Loyalty_campaigns.DTOs;
 using Loyalty_campaigns.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -17,10 +18,17 @@ namespace Loyalty_campaigns.APIs.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<List<Reward>>> CreateNewReward(Reward reward)
+        public async Task<ActionResult<int>> CreateNewReward([FromBody] RewardDTO reward)
         {
-
-            return Ok(await _rewardService.AddRewardAsync(reward));
+            var result = await _rewardService.AddRewardAsync(reward);
+            return Ok(result);
         }
+
+        [HttpGet]
+        public async Task<ActionResult<List<Reward>>> GetAllRewards() 
+        {
+            return await _rewardService.GetAllRewards();
+        }
+
     }
 }

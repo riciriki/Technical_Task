@@ -1,10 +1,12 @@
-﻿using Loyalty_campaigns.Models;
+﻿using Loyalty_campaigns.DTOs;
+using Loyalty_campaigns.Models;
 
 namespace Loyalty_campaigns.Data_Access_Layer.Interfaces
 {
     public interface IRewardRepository
     {
         //add context
-        public Task<Reward> AddRewardAsync(Reward newReward);
+        public Task<int> AddRewardAsync(Reward newReward);
+        public Task<List<Reward>> GetAllRewards();
     }
 }

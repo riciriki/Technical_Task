@@ -3,7 +3,6 @@ using Loyalty_campaigns.Business_Layer.Interfaces;
 using Loyalty_campaigns.Data_Access_Layer;
 using Loyalty_campaigns.Data_Access_Layer.Context;
 using Loyalty_campaigns.Data_Access_Layer.Interfaces;
-using Loyalty_campaigns.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace Loyalty_campaigns
@@ -25,6 +24,9 @@ namespace Loyalty_campaigns
             });
             builder.Services.AddScoped<IRewardService, RewardService>();
             builder.Services.AddScoped<IRewardRepository, RewardRepository>();
+            builder.Services.AddScoped<ICustomerService, CustomerService>();
+            builder.Services.AddScoped<ICustomerRepository, CustomerRepository>();
+
 
             var app = builder.Build();
 

@@ -1,5 +1,6 @@
 ﻿using Loyalty_campaigns.Business_Layer.Interfaces;
 using Loyalty_campaigns.Data_Access_Layer.Interfaces;
+using Loyalty_campaigns.DTOs;
 using Loyalty_campaigns.Models;
 
 namespace Loyalty_campaigns.Business_Layer
@@ -12,10 +13,22 @@ namespace Loyalty_campaigns.Business_Layer
         {
                 _rewardRepositry = rewardRepository;
         }
-        public async Task<Reward> AddRewardAsync(Reward newReward)
+
+        public async Task<int> AddRewardAsync(RewardDTO newReward)
         {
-            newReward.Date_created = DateTime.Now;
-            return  await _rewardRepositry.AddRewardAsync(newReward);
+            Reward reward = new Reward
+            {
+                Employee_id = newReward.Employee_id,
+                Customer_id = newReward.Customer_id,
+                Date_created = DateTime.UtcNow
+            };
+            // return (List<RewardDTO>)(await _rewardRepositry.AddRewardAsync(reward)).Select(u => new RewardDTO { Customer_id = u.Customer_id, Employee_id = u.Employee_id });
+            return await _rewardRepositry.AddRewardAsync(reward);
+        }
+
+        public async Task<List<Reward>> GetAllRewards()
+        {
+           return await _rewardRepositry.GetAllRewards();
         }
     }
 }
