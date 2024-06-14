@@ -31,6 +31,8 @@ namespace Loyalty_campaigns
             //builder.Services.AddScoped<ICustomerRepository, CustomerRepository>();
             builder.Services.AddScoped<IPurchaseService, PurchaseService>();
             builder.Services.AddScoped<IPurchaseRepository, PurchaseRepository>();
+            builder.Services.AddScoped<IEmployeeService, EmployeeService>();
+            builder.Services.AddScoped<IEmployeeRepository, EmployeeRepository>();
 
 
             var app = builder.Build();
