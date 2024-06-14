@@ -49,8 +49,8 @@ namespace Loyalty_campaigns
             });
             builder.Services.AddScoped<IRewardService, RewardService>();
             builder.Services.AddScoped<IRewardRepository, RewardRepository>();
-            //builder.Services.AddScoped<ICustomerService, CustomerService>();
-            //builder.Services.AddScoped<ICustomerRepository, CustomerRepository>();
+            builder.Services.AddScoped<ICustomerService, CustomerService>();
+            builder.Services.AddScoped<ICustomerRepository, CustomerRepository>();
             builder.Services.AddScoped<IPurchaseService, PurchaseService>();
             builder.Services.AddScoped<IPurchaseRepository, PurchaseRepository>();
             builder.Services.AddScoped<IEmployeeService, EmployeeService>();

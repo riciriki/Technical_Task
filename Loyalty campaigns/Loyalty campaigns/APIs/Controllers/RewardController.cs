@@ -24,6 +24,8 @@ namespace Loyalty_campaigns.APIs.Controllers
         //[Authorize]
         public async Task<ActionResult<int>> CreateNewReward([FromBody] RewardDTO reward)
         {
+            if (!await _rewardService.IsCustomerLoyaltyMember(reward.Customer_id))
+                throw new NotLoyaltyMemberException("This customer is not loyalty member");
             reward.Employee_id = 1;
             // reward.Employee_id = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value);
             if (!await _rewardService.VerifyDailyRewardLimit(reward.Employee_id)) 
