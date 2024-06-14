@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Loyalty_campaigns.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20240613113424_FixedReward")]
-    partial class FixedReward
+    [Migration("20240614124640_Final_Migration")]
+    partial class Final_Migration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -69,11 +69,24 @@ namespace Loyalty_campaigns.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<byte[]>("PasswordHash")
+                        .IsRequired()
+                        .HasColumnType("varbinary(max)");
+
+                    b.Property<byte[]>("PasswordSalt")
+                        .IsRequired()
+                        .HasColumnType("varbinary(max)");
+
+                    b.Property<int>("RoleId")
+                        .HasColumnType("int");
+
                     b.Property<string>("Username")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("RoleId");
 
                     b.ToTable("Employees");
                 });
@@ -86,7 +99,7 @@ namespace Loyalty_campaigns.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("Customer_id")
+                    b.Property<int>("CustomerId")
                         .HasColumnType("int");
 
                     b.Property<DateTime>("Date_created")
@@ -94,7 +107,7 @@ namespace Loyalty_campaigns.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("Customer_id");
+                    b.HasIndex("CustomerId");
 
                     b.ToTable("Purchases");
                 });
@@ -107,27 +120,58 @@ namespace Loyalty_campaigns.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("Customer_id")
+                    b.Property<int>("CustomerId")
                         .HasColumnType("int");
 
                     b.Property<DateTime>("Date_created")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("Employee_id")
+                    b.Property<int>("EmployeeId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("Employee_id");
+                    b.HasIndex("CustomerId")
+                        .IsUnique();
+
+                    b.HasIndex("EmployeeId");
 
                     b.ToTable("Rewards");
+                });
+
+            modelBuilder.Entity("Loyalty_campaigns.Models.Role", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Roles");
+                });
+
+            modelBuilder.Entity("Loyalty_campaigns.Models.Employee", b =>
+                {
+                    b.HasOne("Loyalty_campaigns.Models.Role", "Role")
+                        .WithMany("Employees")
+                        .HasForeignKey("RoleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Role");
                 });
 
             modelBuilder.Entity("Loyalty_campaigns.Models.Purchase", b =>
                 {
                     b.HasOne("Loyalty_campaigns.Models.Customer", "Customer")
-                        .WithMany()
-                        .HasForeignKey("Customer_id")
+                        .WithMany("Purchases")
+                        .HasForeignKey("CustomerId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -136,18 +180,38 @@ namespace Loyalty_campaigns.Migrations
 
             modelBuilder.Entity("Loyalty_campaigns.Models.Reward", b =>
                 {
-                    b.HasOne("Loyalty_campaigns.Models.Employee", "Employee")
-                        .WithMany("Rewards")
-                        .HasForeignKey("Employee_id")
+                    b.HasOne("Loyalty_campaigns.Models.Customer", "Customer")
+                        .WithOne("Reward")
+                        .HasForeignKey("Loyalty_campaigns.Models.Reward", "CustomerId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("Loyalty_campaigns.Models.Employee", "Employee")
+                        .WithMany("Rewards")
+                        .HasForeignKey("EmployeeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Customer");
+
                     b.Navigation("Employee");
+                });
+
+            modelBuilder.Entity("Loyalty_campaigns.Models.Customer", b =>
+                {
+                    b.Navigation("Purchases");
+
+                    b.Navigation("Reward");
                 });
 
             modelBuilder.Entity("Loyalty_campaigns.Models.Employee", b =>
                 {
                     b.Navigation("Rewards");
+                });
+
+            modelBuilder.Entity("Loyalty_campaigns.Models.Role", b =>
+                {
+                    b.Navigation("Employees");
                 });
 #pragma warning restore 612, 618
         }

@@ -13,17 +13,17 @@ namespace Loyalty_campaigns.Business_Layer
             _purchaseRepository = purchaseRepository;
         }
 
-        public string GetSuccessfulPurchasesCSVAsync()
+        public async Task<string> GetSuccessfulPurchasesCSVAsync()
         {
-            List<Purchase> purchases = _purchaseRepository.GetSuccessfulPurchasesCSVAsync();
+            List<Purchase> purchases = await _purchaseRepository.GetSuccessfulPurchasesCSVAsync();
             var csvBuilder = new StringBuilder();
-            csvBuilder.AppendLine("Id,Date_created,Customer_id");
+            csvBuilder.AppendLine("Id,Date_created,Customer Name");
             foreach (var purchase in purchases)
             {
-                csvBuilder.AppendLine($"{purchase.Id},{purchase.Date_created},{purchase.Customer_id}");
+                csvBuilder.AppendLine($"{purchase.Id},{purchase.Date_created},{purchase.Customer.FirstName+" "+ purchase.Customer.LastName}");
             }
 
-            var filePath = Path.Combine(Path.GetTempPath(), "products.csv");
+            var filePath = Path.Combine(Path.GetTempPath(), "successful_purchahes.csv");
             File.WriteAllText(filePath, csvBuilder.ToString());
 
             return filePath;

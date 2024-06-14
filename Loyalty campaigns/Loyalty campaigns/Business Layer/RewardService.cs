@@ -18,8 +18,8 @@ namespace Loyalty_campaigns.Business_Layer
         {
             Reward reward = new Reward
             {
-                Employee_id = newReward.Employee_id,
-                Customer_id = newReward.Customer_id,
+                EmployeeId = newReward.Employee_id,
+                CustomerId = newReward.Customer_id,
                 Date_created = DateTime.UtcNow
             };
             // return (List<RewardDTO>)(await _rewardRepositry.AddRewardAsync(reward)).Select(u => new RewardDTO { Customer_id = u.Customer_id, Employee_id = u.Employee_id });

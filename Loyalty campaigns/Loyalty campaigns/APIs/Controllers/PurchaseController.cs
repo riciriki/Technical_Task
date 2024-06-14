@@ -23,7 +23,7 @@ namespace Loyalty_campaigns.APIs.Controllers
             //if (currentDate >= endDateOfCampaign.AddMonths(1))
             if (currentDate >= endDateOfCampaign.AddDays(1)) //for test purpose
             {
-                var csvFilePath = _purchaseService.GetSuccessfulPurchasesCSVAsync();
+                var csvFilePath = await _purchaseService.GetSuccessfulPurchasesCSVAsync();
 
                 var csvBytes = await System.IO.File.ReadAllBytesAsync(csvFilePath);
                 var csvFileName = "successful_purchases.csv";
