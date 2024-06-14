@@ -79,15 +79,6 @@ namespace Loyalty_campaigns.APIs.Controllers
 
             var key = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes(
                 _configuration.GetSection("AppSettings:Token").Value));
-
-            /*var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256Signature);
-
-            var token = new JwtSecurityToken(
-                claims: claims,
-                expires: DateTime.Now.AddDays(1),
-                signingCredentials: creds);
-
-            var jwt = new JwtSecurityTokenHandler().WriteToken(token);*/
             var tokenDescriptor = new SecurityTokenDescriptor
             {
                 Subject = new ClaimsIdentity(claims),
@@ -96,7 +87,7 @@ namespace Loyalty_campaigns.APIs.Controllers
                 SigningCredentials = new SigningCredentials((key), SecurityAlgorithms.HmacSha256Signature)
             };
 
-            //return jwt;
+            
             var token = tokenHandler.CreateToken(tokenDescriptor);
             return tokenHandler.WriteToken(token);
         }

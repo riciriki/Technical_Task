@@ -25,5 +25,16 @@ namespace Loyalty_campaigns.Data_Access_Layer
         {
             return await _context.Rewards.ToListAsync();
         }
+
+        public async Task<int> VerifyDailyRewardLimit(int employeeId)
+        {
+            var rewardCount =   await _context.Rewards
+                                .Where(r => r.EmployeeId == employeeId)
+                                .GroupBy(r => r.Date_created.Date)
+                                .Select(g => new { Date = g.Key, Count = g.Count() })
+                                .CountAsync();
+            return rewardCount;
+
+        }
     }
 }

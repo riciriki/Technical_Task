@@ -8,5 +8,6 @@ namespace Loyalty_campaigns.Data_Access_Layer.Interfaces
         //add context
         public Task<int> AddRewardAsync(Reward newReward);
         public Task<List<Reward>> GetAllRewards();
+        public Task<int> VerifyDailyRewardLimit(int employeeId);
     }
 }

@@ -30,5 +30,12 @@ namespace Loyalty_campaigns.Business_Layer
         {
            return await _rewardRepositry.GetAllRewards();
         }
+
+        public async Task<bool> VerifyDailyRewardLimit(int employeeId) 
+        {
+            int rewardcount = await _rewardRepositry.VerifyDailyRewardLimit(employeeId);
+            if (rewardcount >= 5) return true;
+            return false;
+        }
     }
 }

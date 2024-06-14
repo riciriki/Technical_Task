@@ -7,5 +7,6 @@ namespace Loyalty_campaigns.Business_Layer.Interfaces
     {
         public Task<int> AddRewardAsync(RewardDTO newReward);
         public Task<List<Reward>> GetAllRewards();
+        public Task<bool> VerifyDailyRewardLimit(int employeeId);
     }
 }
