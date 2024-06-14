@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "abv62blmVHJVH2ixHg5Khy7dy2NUx0lZ2eb1fssxHcHir4XNnRNRzim6WJqpsPVraHzlVDPuSoF6nQ9dYUeEjQ==",
+  "dgSpecHash": "eD7v9VgVenSxPimNFMKzA4PvIIff2AUDrBjrpsauJToH+On86TAFTzutPFi+DpywKgzA/E/vmMSWI9eP32jdzQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Pc\\Desktop\\NewCopyClone\\Technical_Task\\Loyalty campaigns\\Loyalty campaigns\\Loyalty campaigns.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Pc\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Pc\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
     "C:\\Users\\Pc\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
+    "C:\\Users\\Pc\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.31\\microsoft.aspnetcore.authentication.jwtbearer.6.0.31.nupkg.sha512",
     "C:\\Users\\Pc\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\Pc\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\Pc\\.nuget\\packages\\microsoft.data.sqlclient\\5.1.5\\microsoft.data.sqlclient.5.1.5.nupkg.sha512",

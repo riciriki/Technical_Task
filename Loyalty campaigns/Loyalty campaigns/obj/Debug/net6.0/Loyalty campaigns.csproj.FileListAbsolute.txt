@@ -206,3 +206,4 @@ C:\Users\Pc\Desktop\NewCopyClone\Technical_Task\Loyalty campaigns\Loyalty campai
 C:\Users\Pc\Desktop\NewCopyClone\Technical_Task\Loyalty campaigns\Loyalty campaigns\obj\Debug\net6.0\Loyalty campaigns.csproj.CopyComplete
 C:\Users\Pc\Desktop\NewCopyClone\Technical_Task\Loyalty campaigns\Loyalty campaigns\obj\Debug\net6.0\Loyalty campaigns.genruntimeconfig.cache
 C:\Users\Pc\Desktop\NewCopyClone\Technical_Task\Loyalty campaigns\Loyalty campaigns\obj\Debug\net6.0\ref\Loyalty campaigns.dll
+C:\Users\Pc\Desktop\NewCopyClone\Technical_Task\Loyalty campaigns\Loyalty campaigns\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

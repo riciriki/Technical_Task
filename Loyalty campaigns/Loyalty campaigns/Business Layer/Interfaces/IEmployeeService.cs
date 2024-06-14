@@ -6,5 +6,6 @@ namespace Loyalty_campaigns.Business_Layer.Interfaces
     public interface IEmployeeService
     {
         public Task<Employee> AddEmployee(EmployeeDTO newEmployee, byte[] passwordHash, byte[] passworSalt);
+        public Task<Employee> CheckEmployeeCredentials(string username);
     }
 }

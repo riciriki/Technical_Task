@@ -26,5 +26,9 @@ namespace Loyalty_campaigns.Business_Layer
             };
             return await _employeeRepository.AddEmployee(employee);
         }
+        public async Task<Employee> CheckEmployeeCredentials(string username)
+        {
+            return await _employeeRepository.FindByUsename(username);
+        }
     }
 }
